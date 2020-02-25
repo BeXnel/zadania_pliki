@@ -1,0 +1,31 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+int main()
+{
+	fstream plik_in;
+	fstream plik_out;
+	plik_in.open("dane.txt", ios::in);
+	plik_out.open("wynik.txt", ios::out);
+
+	string dane;
+	int ilosc=0;
+
+	while (!plik_in.eof())
+	{
+		plik_in >> dane;
+
+		if (dane == "Tuesday")//jezeli wyraz == "Tuesday" zapisz ja do pliku
+			plik_out << dane << endl;; //wypisanie do pliku miesiecy o nazwie "Tuesday"
+		
+		
+	}
+
+
+	plik_in.close();
+	plik_out.close();
+	getchar();
+	return 0;
+}
