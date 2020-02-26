@@ -16,7 +16,7 @@ int main()
 	{
 		plik_in >> dane;
 
-		if (dane.size() >= 7)//jezeli dlugosc wyrazu jest >= 7, to ilosc++
+		if (dane.size() >= 7)//jezeli dlugosc wyrazu jest >= 7, wypisz go do pliku
 			plik_out << dane<<endl; //wypisanie do pliku miesiecy
 		
 		
