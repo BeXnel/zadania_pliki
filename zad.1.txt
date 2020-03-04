@@ -22,8 +22,8 @@ int main()
 
 	}
 
-	plik_in.close;
-	plik_out.close;
+	plik_in.close();
+	plik_out.close();
 
 
 	getchar();
